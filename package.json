@@ -1,0 +1,55 @@
+{
+    "name": "my-vscode-vue",
+    "displayName": "My VSCode Extensions",
+    "description": "Extensions that will supercharge your Vue workflow",
+    "icon": "images/logo.png",
+    "version": "1.0.0",
+    "publisher": "elia",
+    "engines": {
+        "vscode": "^1.14.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/cosemansp/elia-vscode-vue.git"
+    },
+    "keywords": [
+        "Vue",
+        "Elia",
+        "Vue Snippets"
+    ],
+    "extensionDependencies": [],
+    "categories": [
+        "Snippets"
+    ],
+    "main": "./src/extension",
+    "activationEvents": [
+        "*"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "vue",
+                "path": "./snippets/vue.json"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/typescript.json"
+            }
+        ],
+        "commands": [
+            {
+                "command": "extension.newViewComponent",
+                "title": "New Vue Component"
+            }
+        ],
+        "menus": {
+            "explorer/context": [
+                {
+                    "when": "explorerViewletVisible",
+                    "command": "extension.newViewComponent",
+                    "group": "YourGroup@1"
+                }
+            ]
+        }
+    }
+}

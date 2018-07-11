@@ -1,0 +1,27 @@
+{
+    "Vue Single File Component": {
+        "prefix": "vbase",
+        "body": [
+            "<template>",
+            "\t<div>",
+            "",
+            "\t</div>",
+            "</template>",
+            "",
+            "<script lang='ts'>",
+            "\timport { Vue, Component, Prop } from 'vue-property-decorator'",
+            "",
+            "\t@Component({",
+            "\t})",
+            "\texport default class ${1:YourComponent} extends Vue {",
+            "\t\t$0",
+            "\t}",
+            "</script>",
+            "",
+            "<style scoped>",
+            "",
+            "</style>"
+        ],
+        "description": "Base for Vue File"
+    }
+}
